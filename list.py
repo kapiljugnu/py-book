@@ -1,3 +1,5 @@
+# list are mutable
+
 data = list() # constructor
 data2 = [] # literal
 
