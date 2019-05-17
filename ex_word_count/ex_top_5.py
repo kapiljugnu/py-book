@@ -14,7 +14,7 @@ for line in hand :
 
 # top 5 used words
 
-valueFirst = [(v,k) for k,v in di.items()]
+valueFirst = [(v,k) for k,v in di.items()] # list comprehension
 sortedValue = sorted(valueFirst, reverse=True)
 
 print(sortedValue[:5])

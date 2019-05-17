@@ -1,4 +1,3 @@
-import sys
 
 # tuples are immutable
 
@@ -17,13 +16,22 @@ print(data < data3) # => True, compare each element in tuple, 1 with 5, 2 with 6
 print( strTuple > strTuple2) # => False
 
 try:
-    a,b,c,d = data
+    # Traceback (most recent call last):
+    # File "tuples.py", line 19, in <module>
+    # a,b,c,d = data
+    # ValueError: not enough values to unpack (expected 4, got 3)
+    a,b,c,d = data 
 
     print(a,b,c,d)
 except :
-    print('error')
+    pass
 
 
-di = {  'c': 30, 'a': 10, 'b': 20 }
-sortVal = sorted([(v,k) for k,v in di.items()]) # list comprehension
-print(sortVal)
+try:
+    # Traceback (most recent call last):
+    #File "tuples.py", line 32, in <module>
+    # data[0] = 10
+    # TypeError: 'tuple' object does not support item assignment
+    data[0] = 10
+except:
+    pass
