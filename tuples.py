@@ -3,16 +3,15 @@
 
 data = (1, 2, 9) # literal
 data2 = tuple() # constructor
+data3 = (5,6,10)
 
 print(data)
 print(data2)
-
-data3 = (5,6,10)
+print(data < data3) # => True, compare each element in tuple, 1 with 5, 2 with 6 and 9 with 10
 
 strTuple = ('A', 'B')
 strTuple2 = ('C', 'D')
 
-print(data < data3) # => True, compare each element in tuple, 1 with 5, 2 with 6 and 9 with 10
 print( strTuple > strTuple2) # => False
 
 try:
