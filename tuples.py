@@ -12,7 +12,7 @@ print(data < data3) # => True, compare each element in tuple, 1 with 5, 2 with 6
 strTuple = ('A', 'B')
 strTuple2 = ('C', 'D')
 
-print( strTuple > strTuple2) # => False
+print(strTuple > strTuple2) # => False, 'C' is greator than 'A'
 
 try:
     # Traceback (most recent call last):
