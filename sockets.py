@@ -1,4 +1,4 @@
-# Http request in python
+# using socket to read a file with http protocol
 
 import socket
 
@@ -16,3 +16,12 @@ while True:
     print(data.decode())
 
 mysock.close()
+
+
+# Http request in python using urllib
+
+from urllib import request, parse, error
+
+fhand = request.urlopen('http://data.pr4e.org/romeo.txt')
+for line in fhand:
+    print(line.decode().strip())
